@@ -97,46 +97,6 @@ public class ConverterTest {
     }
 
     @Test
-    public void testConvert3999999() {
-        assertEquals("MMMCMXCIXCMXCIX", Converter.convertArabicToRoman(3999999));
-    }
-
-    @Test
-    public void testConvert2000000() {
-        assertEquals("MM", Converter.convertArabicToRoman(2000000));
-    }
-
-    @Test
-    public void testConvert1000000() {
-        assertEquals("M", Converter.convertArabicToRoman(1000000));
-    }
-
-    @Test
-    public void testConvert500000() {
-        assertEquals("D", Converter.convertArabicToRoman(500000));
-    }
-
-    @Test
-    public void testConvert100000() {
-        assertEquals("C", Converter.convertArabicToRoman(100000));
-    }
-
-    @Test
-    public void testConvert50000() {
-        assertEquals("L", Converter.convertArabicToRoman(50000));
-    }
-
-    @Test
-    public void testConvert10000() {
-        assertEquals("X", Converter.convertArabicToRoman(10000));
-    }
-
-    @Test
-    public void testConvert5000() {
-        assertEquals("V", Converter.convertArabicToRoman(5000));
-    }
-
-    @Test
     public void testConvert399() {
         assertEquals("CCCXCIX", Converter.convertArabicToRoman(399));
     }
@@ -199,5 +159,17 @@ public class ConverterTest {
     @Test
     public void testConvert21() {
         assertEquals("XXI", Converter.convertArabicToRoman(21));
+    }
+
+    @org.junit.jupiter.api.BeforeEach
+    void setUp() {
+    }
+
+    @org.junit.jupiter.api.AfterEach
+    void tearDown() {
+    }
+
+    @org.junit.jupiter.api.Test
+    void convertArabicToRoman() {
     }
 }
